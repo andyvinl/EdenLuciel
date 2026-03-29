@@ -1,0 +1,345 @@
+/* --- fonts --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif; 
+}
+@font-face {
+    font-family: 'Soria'; 
+    src: url('');
+}
+.navbar { 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 30px 60px;
+}
+.logo { display: flex; align-items: center; gap: 12px; }
+.dot { width: 22px; height: 22px; background-color: #7cd2d2; border-radius: 50%; }
+.name { font-size: 1.4rem; font-weight: 800; color: #111; }
+.title { font-size: 1rem; color: #555; font-weight: 400; margin-left: 8px; }
+
+.nav-links { list-style: none; display: flex; align-items: center; margin: 0; padding: 0; }
+.nav-links li { padding: 0 15px; border-right: 1px solid #666; }
+.nav-links li:last-child { border-right: none; padding-right: 0; }
+.nav-links a { text-decoration: none; color: #333; font-size: 0.95rem; transition: color 0.2s ease; }
+.nav-links a:hover { color: #98c0d8; }
+
+
+/* ---  index pg --- */
+.home-page {
+    background-color: #b7515b; 
+    color: #0a3651;  
+          
+}
+.projects-section {
+    display: flex;
+    justify-content: center;  
+    align-items: flex-start; 
+    gap: 60px;                
+    max-width: 1050px;        
+    margin: 80px auto 40px auto;        
+    padding: 0 40px;          
+}
+.profile-photo img {
+    width: 320px;            
+    height: 320px;            
+    border-radius: 50%;       
+    object-fit: cover;        
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15); 
+}
+.projects-text {
+    max-width: 500px;         
+    width: 100%;              
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-text h1, .projects-text h3 {
+    margin-top: 0; 
+}
+
+.donation-section {
+    max-width: 800px;         
+    margin: 0 auto 80px auto; 
+    padding: 0 40px;
+    color: black;
+}
+.donation-section h2 {
+    color: black;
+    text-align: center;
+}
+.gofundme-widget {
+    width: 50%;               
+    display: flex;
+    justify-content: center; 
+    margin: 0 auto;
+}
+
+.gfm-embed {
+    width: 100%;               
+}
+.widget-container {
+    display: flex;               
+    justify-content: center;    
+}
+
+/* ehhhh why won't the border go away */
+.gfm-embed iframe {
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 8px; 
+}
+
+
+/* ---  eden's resume--- */
+.resume-page {
+   background-color: white;
+}
+
+h1, h3 { color:black; font-family: "Times New Roman", Times, serif; }
+h2 { color:grey; font-family: "Times New Roman", Times, serif; }
+h4 { color: black; }
+hr { border: none; height: 1px; background-color: grey; }
+p { font-family: "Times New Roman", Times, serif; line-height: 1.5; }
+ul { color: black; font-family: "Times New Roman", Times, serif; }
+
+.text-box { display: inline-block; border: 2px solid grey; padding: 5px 10px; background-color: #f4f4f4; border-radius: 5px; }
+.tight-text { margin-bottom: 2px; margin-top: 5px; }
+.sub-text { margin-top: 0px; }
+.prosummary { color: black; }
+
+
+/* --- Eden's Scoials  --- */
+.socials-page {
+    background-color: #b7515b; 
+    color: #0a3651; 
+}
+
+.socials-title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.5rem;
+}
+
+.horizontal-socials-container {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+    gap: 50px;                
+    max-width: 1200px;        
+    margin: 40px auto;        
+    padding: 0 40px;          
+}
+
+/* Griddy */
+.photo-grid {
+    display: flex;             
+    flex-direction: row;       
+    justify-content: center;   
+    gap: 20px;                 
+    width: 100%;
+}
+/* polaroid look stuff */
+.polaroid-frame {
+    background-color: white;   
+    padding: 10px 10px 35px 10px; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15); 
+    width: 220px;                 
+    flex-shrink: 0;               
+}
+.polaroid-frame img {
+    width: 100%;               
+    aspect-ratio: 1 / 1;       
+    object-fit: cover;         
+    display: block;
+}
+.polaroid-caption {
+    font-family: 'Shadows Into Light', cursive; 
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    margin: 12px 0 0 0;        
+}
+.social-links-container {
+    display: flex;
+    flex-direction: row;       
+    gap: 30px;
+    margin-top: 10px;          
+}
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;          
+    height: 70px;        
+    background-color: #f7f7f7;
+    color: #b7515b;       
+    border-radius: 50%;   
+    text-decoration: none;
+    font-size: 30px;     
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease; 
+}
+/* hover effects and stuff*/
+.social-icon:hover {
+    transform: translateY(-8px);
+    background-color: #7cd2d2; 
+    color: #111;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+/*the portfolio */
+.portfolio-page {
+    background-color: #b7515b; 
+    color: #0a3651;            
+}
+
+.portfolio-title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #0a3651;            
+} 
+
+.portfolio-container {
+    max-width: 1000px;         
+    margin: 0 auto 80px auto;  
+    padding: 0 40px;
+}
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px;                             
+}
+.gallery-frame {
+    background-color: white;               
+    padding: 8px;                          
+    border-radius: 4px;                    
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); 
+}
+.gallery-frame img {
+    width: 100%;
+    aspect-ratio: 4 / 3;                   
+    object-fit: cover;                     
+    display: block;                        
+    border-radius: 2px;
+    cursor: pointer; 
+    transition: opacity 0.2s ease;
+}
+.gallery-frame img:hover {
+    opacity: 0.8; 
+}
+/* lightbox */
+.lightbox {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); 
+    justify-content: center;
+    align-items: center;
+}
+.lightbox-content {
+    max-width: 90%; 
+    max-height: 90vh; 
+    box-shadow: 0 0 25px rgba(0,0,0,0.8); 
+    border-radius: 4px;
+    animation: zoomIn 0.3s ease; 
+}
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 50px; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close-lightbox:hover {
+    color: #b7515b; 
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+/* Contact me*/
+.contact-page {
+    background-color: #b7515b; 
+    color: #0a3651;
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+}
+.contact-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 500px;
+}
+.contact-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #0a3651;
+}
+.contact-subtitle {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+    font-size: 0.95rem;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    box-sizing: border-box; 
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #7cd2d2; 
+    box-shadow: 0 0 5px rgba(124, 210, 210, 0.5);
+}
+
+/*  Button */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0a3651; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #7cd2d2; 
+    color: #111;
+}
